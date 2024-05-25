@@ -1,10 +1,10 @@
  const singleMangaEl = document.getElementById('single-manga');
-
+ const path = "./manga.json"
 const urlParams = new URLSearchParams(window.location.search);
 const mangaID = urlParams.get('id');
 
 function getMangaById(mangaID) {
-  fetch('./manga.json')
+  fetch(path)
     .then(res => res.json())
     .then(data => {
       const manga = data.find(m => m.id === parseInt(mangaID));
@@ -20,7 +20,6 @@ function getMangaById(mangaID) {
     });
 }
 
-// Функция для отображения информации о манге
 function displayMangaDetails(manga) {
   singleMangaEl.innerHTML = `
     <div class="single-manga">
@@ -38,5 +37,4 @@ function displayMangaDetails(manga) {
   `;
 }
 
-// Вызов функции для получения и отображения информации о манге
 getMangaById(mangaID);

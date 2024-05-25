@@ -149,6 +149,6 @@ mangasEl.addEventListener('click', e => {
 
   if (mangaInfo) {
     const mangaID = mangaInfo.getAttribute('data-mangaID');
-    window.location.href = `manga-details.html?id=${mangaID}`;
+    window.open(`manga-details.html?id=${mangaID}`, '_blank');
   }
 });
