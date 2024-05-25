@@ -121,7 +121,14 @@
     padding-left: 0;
     list-style-type: none;
   }
-  
+  .genres{
+    display: flex;
+    margin: 15px;
+    gap: 10px;
+  }
+  .genres button{
+    border-radius: 5px;
+  }
   .single-manga ul li {
     border: 1px solid #ededed;
     border-radius: 5px;

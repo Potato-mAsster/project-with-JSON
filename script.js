@@ -50,6 +50,50 @@ function searchManga(e) {
   }
 }
 
+document.getElementById('all').addEventListener('click', function() {
+  displayFilteredManga('all');
+});
+
+document.getElementById('action').addEventListener('click', function() {
+  displayFilteredManga('Экшен');
+});
+
+document.getElementById('romance').addEventListener('click', function() {
+  displayFilteredManga('Романтика');
+});
+
+document.getElementById('fantasy').addEventListener('click', function() {
+  displayFilteredManga('Фэнтези');
+});
+
+function displayFilteredManga(genre) {
+  fetch('./manga.json')
+    .then(res => res.json())
+    .then(data => {
+      const filteredMangas = genre === 'all' ? data : data.filter(manga => manga.genre.includes(genre));
+      
+      if (filteredMangas.length === 0) {
+        resultHeading.innerHTML = `<p>Нет результатов для жанра '${genre}'. Попробуйте снова!</p>`;
+      } else {
+        resultHeading.innerHTML = `${genre}:</h2>`;
+        mangasEl.innerHTML = filteredMangas
+          .map(
+            manga => `
+          <div class="manga">
+            <img src="${manga.image_url}" alt="${manga.title}" />
+            <div class="manga-info" data-mangaID="${manga.id}">
+              <h3>${manga.title}</h3>
+              <p>${manga.author}</p>
+            </div>
+          </div>
+        `
+          )
+          .join('');
+      }
+    });
+}
+
+
 function getMangaById(mangaID) {
   fetch('./manga.json')
     .then(res => res.json())
@@ -103,7 +147,6 @@ mangasEl.addEventListener('click', e => {
 
   if (mangaInfo) {
     const mangaID = mangaInfo.getAttribute('data-mangaID');
-    // Redirect to manga-details.html with manga ID as URL parameter
     window.location.href = `manga-details.html?id=${mangaID}`;
   }
 });

@@ -1,7 +1,7 @@
 [
   {
       "id": 1,
-      "image_url": "https://cover.imglib.info/uploads/cover/naruto/cover/zYymN7Pz3Gxz_250x350.jpg",
+      "image_url": "https://github.com/Potato-mAsster/project-with-JSON/blob/main/source/%D0%BD%D0%B0%D1%80%D1%83%D1%82%D0%BE.jpg?raw=true",
       "title": "Наруто",
       "genre": "Экшен, Приключения, Фэнтези",
       "description": "История Наруто Узумаки, молодого ниндзя, который стремится к признанию и мечтает стать Хокаге, лидером деревни.",
@@ -10,7 +10,7 @@
   },
   {
       "id": 2,
-      "image_url": "https://cover.imglib.info/uploads/cover/one-piece/cover/GwiBRJp7hMqA_250x350.jpg",
+      "image_url": "https://github.com/Potato-mAsster/project-with-JSON/blob/main/source/%D0%B2%D0%B0%D0%BD%20%D0%BF%D0%B8%D1%81.jpg?raw=true",
       "title": "Ван-Пис",
       "genre": "Экшен, Приключения, Фэнтези",
       "description": "Манки Д. Луффи, мальчик с телом, обладающим свойствами резины после случайного поедания Дьявольского Фрукта, исследует Гранд Лайн в поисках величайшего сокровища мира, известного как 'Ван-Пис', чтобы стать новым Королем Пиратов.",
@@ -19,7 +19,7 @@
   },
   {
       "id": 3,
-      "image_url": "https://oresama-shop.ru/uploads/1c/import_files/3b/3bd201cf-6450-11ea-8b71-38d5477ba6f8_3bd201d2-6450-11ea-8b71-38d5477ba6f8.jpeg",
+      "image_url": "https://github.com/Potato-mAsster/project-with-JSON/blob/main/source/%D0%B0%D1%82%D0%B0%D0%BA%D0%B0%20%D1%82%D0%B8%D1%82%D0%B0%D0%BD%D0%BE%D0%B2.jpg?raw=true",
       "title": "Атака титанов",
       "genre": "Экшен, Темное фэнтези, Постапокалипсис",
       "description": "В мире, где человечество живет в огромных окруженных стенами городах, чтобы защититься от титанов, гигантских гуманоидных существ, Эрен Йегер присоединяется к Разведкорпусу, чтобы отомстить после того, как титан уничтожил его родной город.",
@@ -28,7 +28,7 @@
   },
   {
       "id": 4,
-      "image_url": "https://mangajam.com/wp-content/uploads/2021/01/Death-Note-Cover.jpg",
+      "image_url": "https://github.com/Potato-mAsster/project-with-JSON/blob/main/source/%D1%82%D0%B5%D1%82%D1%80%D0%B0%D0%B4%D1%8C%20%D1%81%D0%BC%D0%B5%D1%80%D1%82%D0%B8.jpg?raw=true",
       "title": "Тетрадь смерти",
       "genre": "Мистика, Психологический триллер, Сверхъестественное",
       "description": "Лайт Ягами, старшеклассник, обнаруживает сверхъестественную тетрадь, которая позволяет убивать любого, чье имя он напишет в ней, и решает использовать её для избавления мира от преступников.",
@@ -37,7 +37,7 @@
   },
   {
       "id": 5,
-      "image_url": "https://mangajam.com/wp-content/uploads/2021/01/Fullmetal-Alchemist-Cover.jpg",
+      "image_url": "https://github.com/Potato-mAsster/project-with-JSON/blob/main/source/%D1%81%D1%82%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%B9%20%D0%B0%D0%BB%D1%85%D0%B8%D0%BC%D0%B8%D0%BA.jpg?raw=true",
       "title": "Стальной алхимик",
       "genre": "Экшен, Приключения, Фэнтези",
       "description": "Два брата, Эдвард и Альфонс Элрики, используют алхимию в своем поиске Философского Камня, чтобы восстановить свои тела после неудачной попытки вернуть к жизни свою мать.",
@@ -46,7 +46,7 @@
   },
   {
       "id": 6,
-      "image_url": "https://mangajam.com/wp-content/uploads/2021/01/Dragon-Ball-Cover.jpg",
+      "image_url": "https://github.com/Potato-mAsster/project-with-JSON/blob/main/source/%D0%B6%D0%B5%D0%BC%D1%87%D1%83%D0%B3%20%D0%B4%D1%80%D0%B0%D0%BA%D0%BE%D0%BD%D0%B0.jpg?raw=true",
       "title": "Жемчуг дракона",
       "genre": "Экшен, Приключения, Фэнтези, Боевые искусства",
       "description": "История Гоку, Саяна, который прибыл на Землю и стал её защитником, сражаясь с различными злодеями и участвуя в межгалактических турнирах боевых искусств.",
@@ -55,7 +55,7 @@
   },
   {
       "id": 7,
-      "image_url": "https://mangajam.com/wp-content/uploads/2021/01/Bleach-Cover.jpg",
+      "image_url": "https://github.com/Potato-mAsster/project-with-JSON/blob/main/source/%D0%B1%D0%BB%D0%B8%D1%87.jpg?raw=true",
       "title": "Блич",
       "genre": "Экшен, Приключения, Сверхъестественное",
       "description": "Ичиго Куросаки, подросток, который получает способности Проводника Душ после случайного получения их от другого Проводника Душ, Рукии Кучики, должен защищать людей от злых духов и направлять души умерших в загробную жизнь.",
@@ -64,7 +64,7 @@
   },
   {
       "id": 8,
-      "image_url": "https://mangajam.com/wp-content/uploads/2021/01/Tokyo-Ghoul-Cover.jpg",
+      "image_url": "https://github.com/Potato-mAsster/project-with-JSON/blob/main/source/%D1%82%D0%BE%D0%BA%D0%B8%D0%B9%D1%81%D0%BA%D0%B8%D0%B9%20%D0%B3%D1%83%D0%BB%D1%8C.jpg?raw=true",
       "title": "Токийский гуль",
       "genre": "Темное фэнтези, Ужасы, Сверхъестественное",
       "description": "Кен Канеки, студент колледжа, едва выживает после смертельного столкновения с Ризе Камиширо, его свиданием, которая оказывается гулям. После выздоровления Канеки обнаруживает, что он перенес операцию, которая превратила его в полугуль.",
@@ -73,7 +73,7 @@
   },
   {
       "id": 9,
-      "image_url": "https://mangajam.com/wp-content/uploads/2021/01/My-Hero-Academia-Cover.jpg",
+      "image_url": "https://github.com/Potato-mAsster/project-with-JSON/blob/main/source/%D0%BC%D0%B3%D0%B0.jpg?raw=true",
       "title": "Моя геройская академия",
       "genre": "Экшен, Приключения, Супергерой",
       "description": "В мире, где люди с суперспособностями (известные как 'Причуды') являются нормой, мальчик без них, Изуку Мидория, все равно мечтает стать героем.",
@@ -82,7 +82,7 @@
   },
   {
       "id": 10,
-      "image_url": "https://mangajam.com/wp-content/uploads/2021/01/Sword-Art-Online-Cover.jpg",
+      "image_url": "https://github.com/Potato-mAsster/project-with-JSON/blob/main/source/%D0%BC%D0%BC%D0%BE.jpg?raw=true",
       "title": "Мастера меча онлайн",
       "genre": "Приключения, Фэнтези, Научная фантастика",
       "description": "История игроков виртуальной реальности MMORPG, которые, войдя в игру, обнаруживают, что не могут выйти из неё, и единственный способ вернуться к своим телам в реальном мире - пройти все 100 этажей башни игры.",
@@ -91,7 +91,7 @@
   },
   {
       "id": 11,
-      "image_url": "https://mangajam.com/wp-content/uploads/2021/01/Fairy-Tail-Cover.jpg",
+      "image_url": "https://github.com/Potato-mAsster/project-with-JSON/blob/main/source/%D1%85%D0%B2%D0%BE%D1%81%D1%82%20%D1%84%D0%B5%D0%B8.jpg?raw=true",
       "title": "Хвост феи",
       "genre": "Экшен, Приключения, Фэнтези",
       "description": "История Нацу Драгнила, мага-драгонслеера, который ищет дракона Игнила, и приключения Нацу и его друзей из титульной гильдии магов.",
@@ -100,8 +100,8 @@
   },
   {
       "id": 12,
-      "image_url": "https://mangajam.com/wp-content/uploads/2021/01/Hunter-x-Hunter-Cover.jpg",
-      "title": "Хантер х Хантер",
+      "image_url": "https://github.com/Potato-mAsster/project-with-JSON/blob/main/source/%D1%85%D1%85.jpg?raw=true",
+      "title": "Охотник х Охотник",
       "genre": "Экшен, Приключения, Фэнтези",
       "description": "История о молодом мальчике по имени Гон Фрикс, который обнаруживает, что его отец, которого он считал мертвым, на самом деле жив и является легендарным охотником.",
       "author": "Йошихиро Тогаси",
@@ -109,7 +109,7 @@
   },
   {
       "id": 13,
-      "image_url": "https://mangajam.com/wp-content/uploads/2021/01/Black-Clover-Cover.jpg",
+      "image_url": "https://github.com/Potato-mAsster/project-with-JSON/blob/main/source/%D1%87%D0%B5%D1%80%D0%BD%D1%8B%D0%B9%20%D0%BA%D0%BB%D0%B5%D0%B2%D0%B5%D1%80.jpg?raw=true",
       "title": "Чёрный клевер",
       "genre": "Экшен, Приключения, Фэнтези",
       "description": "Аста, молодой мальчик, родившийся без какой-либо магической силы, решает стать следующим Королем Магов.",
@@ -118,7 +118,7 @@
   },
   {
       "id": 14,
-      "image_url": "https://mangajam.com/wp-content/uploads/2021/01/Demon-Slayer-Cover.jpg",
+      "image_url": "https://github.com/Potato-mAsster/project-with-JSON/blob/main/source/%D0%BA%D1%80%D0%B4.jpg?raw=true",
       "title": "Клинок, рассекающий демонов",
       "genre": "Экшен, Темное фэнтези, Историческое",
       "description": "Танджиро Камадо, добросердечный мальчик, который продает уголь на жизнь, находит свою семью убитой демоном, а его младшая сестра, Незуко, превращена в демона. Танджиро становится охотником на демонов, чтобы отомстить за свою семью и излечить сестру.",
@@ -127,7 +127,7 @@
   },
   {
       "id": 15,
-      "image_url": "https://mangajam.com/wp-content/uploads/2021/01/ReZero-Cover.jpg",
+      "image_url": "https://github.com/Potato-mAsster/project-with-JSON/blob/main/source/%D1%80%D0%B5%20%D0%B7%D0%B8%D1%80%D0%BE.jpg?raw=true",
       "title": "Re:Zero. Жизнь с нуля в альтернативном мире",
       "genre": "Приключения, Темное фэнтези, Исекай",
       "description": "Субару Нацуки, молодой человек, который внезапно оказывается в другом мире, обнаруживает, что у него есть способность 'Возвращение по смерти', позволяющая ему вернуться назад во времени после его смерти.",
@@ -136,7 +136,7 @@
   },
   {
     "id": 16,
-    "image_url": "https://mangajam.com/wp-content/uploads/2021/01/The-Seven-Deadly-Sins-Cover.jpg",
+    "image_url": "https://github.com/Potato-mAsster/project-with-JSON/blob/main/source/%D1%81%D1%81%D0%B3.jpg?raw=true",
     "title": "Семь смертных грехов",
     "genre": "Экшен, Приключения, Фэнтези",
     "description": "История некогда активной группы рыцарей под названием Семь Смертных Грехов, которые были распущены после того, как их обвинили в заговоре с целью свержения Королевства Лионес. Принцесса Элизабет узнает правду и разыскивает Семь Смертных Грехов, чтобы помочь вернуть королевство.",
@@ -145,7 +145,7 @@
   },
   {
     "id": 17,
-    "image_url": "https://mangajam.com/wp-content/uploads/2021/01/Blue-Exorcist-Cover.jpg",
+    "image_url": "https://github.com/Potato-mAsster/project-with-JSON/blob/main/source/%D1%81%D0%B8%D0%BD%D0%B8%D0%B9%20%D1%8D%D0%BA%D0%B7%D0%BE%D1%80%D1%86%D0%B8%D1%81%D1%82.jpg?raw=true",
     "title": "Синий экзорцист",
     "genre": "Экшен, Сверхъестественное",
     "description": "Рин Окумура, подросток, который обнаруживает, что он сын Сатаны, решает стать экзорцистом, чтобы сражаться против своего биологического отца и защитить мир от демонов.",
@@ -154,7 +154,7 @@
 },
 {
     "id": 18,
-    "image_url": "https://mangajam.com/wp-content/uploads/2021/01/JoJos-Bizarre-Adventure-Cover.jpg",
+    "image_url": "https://github.com/Potato-mAsster/project-with-JSON/blob/main/source/%D0%B6%D0%B8%D0%B6%D0%B0.jpg?raw=true",
     "title": "Невероятные приключения ДжоДжо",
     "genre": "Экшен, Приключения, Сверхъестественное",
     "description": "История семьи Джостаров, члены которой обладают уникальными силами и предназначены бороться с сверхъестественными врагами.",
@@ -163,7 +163,7 @@
 },
 {
     "id": 19,
-    "image_url": "https://mangajam.com/wp-content/uploads/2021/01/One-Punch-Man-Cover.jpg",
+    "image_url": "https://github.com/Potato-mAsster/project-with-JSON/blob/main/source/%D0%B2%D0%B0%D0%BD%D0%BF%D0%B0%D1%87%D0%BC%D0%B0%D0%BD.jpg?raw=true",
     "title": "Ванпанчмен",
     "genre": "Экшен, Комедия, Супергерой",
     "description": "Сайтама, супергерой, который может победить любого противника одним ударом, страдает от скуки из-за отсутствия вызовов в его борьбе с злом.",
@@ -172,7 +172,7 @@
 },
 {
     "id": 20,
-    "image_url": "https://mangajam.com/wp-content/uploads/2021/01/Your-Lie-in-April-Cover.jpg",
+    "image_url": "https://github.com/Potato-mAsster/project-with-JSON/blob/main/source/%D1%82%D0%B0%D0%BB.jpg?raw=true",
     "title": "Твоя апрельская ложь",
     "genre": "Драма, Романтика, Музыка",
     "description": "Косэй Арима, вундеркинд-пианист, теряет способность слышать звук пианино после смерти матери. Его жизнь меняется, когда он встречает энергичную скрипачку Каори Миядзоно, которая помогает ему вернуться в мир музыки.",

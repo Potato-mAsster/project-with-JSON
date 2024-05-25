@@ -1,10 +1,8 @@
 const singleMangaEl = document.getElementById('single-manga');
 
-// Получение параметра id из URL
 const urlParams = new URLSearchParams(window.location.search);
 const mangaID = urlParams.get('id');
 
-// Функция для получения манги по ее идентификатору
 function getMangaById(mangaID) {
   fetch('./manga.json')
     .then(res => res.json())
