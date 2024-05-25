@@ -1,4 +1,4 @@
-const singleMangaEl = document.getElementById('single-manga');
+ const singleMangaEl = document.getElementById('single-manga');
 
 const urlParams = new URLSearchParams(window.location.search);
 const mangaID = urlParams.get('id');
