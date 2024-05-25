@@ -5,7 +5,9 @@ const search = document.getElementById('search'),
   resultHeading = document.getElementById('result-heading'),
   single_mangaEl = document.getElementById('single-manga');
 
-fetch('./manga.json')
+const path = "./manga.json"
+
+fetch(path)
   .then(res => res.json())
   .then(data => {
     console.log(data);
@@ -16,7 +18,7 @@ function searchManga(e) {
   single_mangaEl.innerHTML = '';
   const term = search.value;
   if (term.trim()) {
-    fetch('./manga.json')
+    fetch(path)
       .then(res => res.json())
       .then(data => {
         console.log(data);
@@ -67,7 +69,7 @@ document.getElementById('fantasy').addEventListener('click', function() {
 });
 
 function displayFilteredManga(genre) {
-  fetch('./manga.json')
+  fetch(path)
     .then(res => res.json())
     .then(data => {
       const filteredMangas = genre === 'all' ? data : data.filter(manga => manga.genre.includes(genre));
@@ -95,7 +97,7 @@ function displayFilteredManga(genre) {
 
 
 function getMangaById(mangaID) {
-  fetch('./manga.json')
+  fetch(path)
     .then(res => res.json())
     .then(data => {
       const manga = data.find(m => m.id === parseInt(mangaID));
@@ -107,7 +109,7 @@ function getRandomManga() {
   mangasEl.innerHTML = '';
   resultHeading.innerHTML = '';
 
-  fetch('./manga.json')
+  fetch(path)
     .then(res => res.json())
     .then(data => {
       const randomIndex = Math.floor(Math.random() * data.length);
