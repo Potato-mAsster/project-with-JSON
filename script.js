@@ -1,38 +1,42 @@
 const search = document.getElementById('search'),
   submit = document.getElementById('submit'),
   random = document.getElementById('random'),
-  mealsEl = document.getElementById('meals'),
+  mangasEl = document.getElementById('mangas'),
   resultHeading = document.getElementById('result-heading'),
-  single_mealEl = document.getElementById('single-meal');
+  single_mangaEl = document.getElementById('single-manga');
 
-// Search meal and fetch from API
-function searchMeal(e) {
+fetch('./manga.json')
+  .then(res => res.json())
+  .then(data => {
+    console.log(data);
+  });
+
+function searchManga(e) {
   e.preventDefault();
-
-  // Clear single meal
-  single_mealEl.innerHTML = '';
-
-  // Get search term
+  single_mangaEl.innerHTML = '';
   const term = search.value;
-
-  // Check for empty
   if (term.trim()) {
-    fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=${term}`)
+    fetch('./manga.json')
       .then(res => res.json())
       .then(data => {
         console.log(data);
-        resultHeading.innerHTML = `<h2>Search results for '${term}':</h2>`;
+        resultHeading.innerHTML = `<h2>Результаты поиска для '${term}':</h2>`;
 
-        if (data.meals === null) {
-          resultHeading.innerHTML = `<p>There are no search results. Try again!</p>`;
+        const filteredMangas = data.filter(manga =>
+          manga.title.toLowerCase().includes(term.toLowerCase())
+        );
+
+        if (filteredMangas.length === 0) {
+          resultHeading.innerHTML = `<p>Нет результатов. Попробуйте снова!</p>`;
         } else {
-          mealsEl.innerHTML = data.meals
+          mangasEl.innerHTML = filteredMangas
             .map(
-              meal => `
-            <div class="meal">
-              <img src="${meal.strMealThumb}" alt="${meal.strMeal}" />
-              <div class="meal-info" data-mealID="${meal.idMeal}">
-                <h3>${meal.strMeal}</h3>
+              manga => `
+            <div class="manga">
+              <img src="${manga.image_url}" alt="${manga.title}" />
+              <div class="manga-info" data-mangaID="${manga.id}">
+                <h3>${manga.title}</h3>
+                <p>${manga.author}</p>
               </div>
             </div>
           `
@@ -40,87 +44,66 @@ function searchMeal(e) {
             .join('');
         }
       });
-    // Clear search text
     search.value = '';
   } else {
-    alert('Please enter a search term');
+    alert('Пожалуйста, введите запрос');
   }
 }
 
-// Fetch meal by ID
-function getMealById(mealID) {
-  fetch(`https://www.themealdb.com/api/json/v1/1/lookup.php?i=${mealID}`)
+function getMangaById(mangaID) {
+  fetch('./manga.json')
     .then(res => res.json())
     .then(data => {
-      const meal = data.meals[0];
-
-      addMealToDOM(meal);
+      const manga = data.find(m => m.id === parseInt(mangaID));
+      addMangaToDOM(manga);
     });
 }
 
-// Fetch random meal from API
-function getRandomMeal() {
-  // Clear meals and heading
-  mealsEl.innerHTML = '';
+function getRandomManga() {
+  mangasEl.innerHTML = '';
   resultHeading.innerHTML = '';
 
-  fetch(`https://www.themealdb.com/api/json/v1/1/random.php`)
+  fetch('./manga.json')
     .then(res => res.json())
     .then(data => {
-      const meal = data.meals[0];
+      const randomIndex = Math.floor(Math.random() * data.length);
+      const manga = data[randomIndex];
 
-      addMealToDOM(meal);
+      addMangaToDOM(manga);
     });
 }
 
-// Add meal to DOM
-function addMealToDOM(meal) {
-  const ingredients = [];
-
-  for (let i = 1; i <= 20; i++) {
-    if (meal[`strIngredient${i}`]) {
-      ingredients.push(
-        `${meal[`strIngredient${i}`]} - ${meal[`strMeasure${i}`]}`
-      );
-    } else {
-      break;
-    }
-  }
-
-  single_mealEl.innerHTML = `
-    <div class="single-meal">
-      <h1>${meal.strMeal}</h1>
-      <img src="${meal.strMealThumb}" alt="${meal.strMeal}" />
-      <div class="single-meal-info">
-        ${meal.strCategory ? `<p>${meal.strCategory}</p>` : ''}
-        ${meal.strArea ? `<p>${meal.strArea}</p>` : ''}
+function addMangaToDOM(manga) {
+  single_mangaEl.innerHTML = `
+    <div class="single-manga">
+      <h1>${manga.title}</h1>
+      <img src="${manga.image_url}" alt="${manga.title}" />
+      <div class="single-manga-info">
+        ${manga.author ? `<p>Автор: ${manga.author}</p>` : ''}
+        ${manga.genre ? `<p>Жанр: ${manga.genre}</p>` : ''}
       </div>
       <div class="main">
-        <p>${meal.strInstructions}</p>
-        <h2>Ingredients</h2>
-        <ul>
-          ${ingredients.map(ing => `<li>${ing}</li>`).join('')}
-        </ul>
+        <p>${manga.description}</p>
       </div>
     </div>
   `;
 }
 
-// Event listeners
-submit.addEventListener('submit', searchMeal);
-random.addEventListener('click', getRandomMeal);
+submit.addEventListener('submit', searchManga);
+random.addEventListener('click', getRandomManga);
 
-mealsEl.addEventListener('click', e => {
-  const mealInfo = e.composedPath().find(item => {
+mangasEl.addEventListener('click', e => {
+  const mangaInfo = e.composedPath().find(item => {
     if (item.classList) {
-      return item.classList.contains('meal-info');
+      return item.classList.contains('manga-info');
     } else {
       return false;
     }
   });
 
-  if (mealInfo) {
-    const mealID = mealInfo.getAttribute('data-mealid');
-    getMealById(mealID);
+  if (mangaInfo) {
+    const mangaID = mangaInfo.getAttribute('data-mangaID');
+    // Redirect to manga-details.html with manga ID as URL parameter
+    window.location.href = `manga-details.html?id=${mangaID}`;
   }
 });
